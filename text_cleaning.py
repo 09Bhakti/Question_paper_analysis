@@ -59,7 +59,7 @@ def find_repeated_lines(raw_text, min_occurrences=3, top_n=3, bottom_n=3, simila
 
 import re
 
-def clean_text(raw_text):
+def clean_text(raw_text,removals):
     lines = raw_text.splitlines()
     lines = [line.strip() for line in lines if line.strip()]
 
